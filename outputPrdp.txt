@@ -1,0 +1,34 @@
+
+Token: SEPARATOR  Lexeme: (
+A -> BA'
+B -> CB'
+C -> (
+
+Token: IDENTIFIER  Lexeme: a
+A -> BA'
+B -> CB'
+C -> D
+D -> id
+
+Token: OPERATOR  Lexeme: /
+B' -> *CB' | /CB'
+
+Token: IDENTIFIER  Lexeme: b
+C -> D
+D -> id
+B' -> epsilon
+
+Token: SEPARATOR  Lexeme: )
+A' -> epsilon
+C -> )
+B' -> epsilon
+
+Token: OPERATOR  Lexeme: +
+A' -> +BA | A' -> -BA
+
+Token: IDENTIFIER  Lexeme: c
+B -> CB'
+C -> D
+D -> id
+B' -> epsilon
+A' -> epsilon

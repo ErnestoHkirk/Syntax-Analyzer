@@ -1,0 +1,10 @@
+! testing the Bottom-Up LR syntax analyzer !
+
+bool i;
+i = 0;
+float j;
+j = 5.2 + i;
+int k;
+k = 11;
+float l;
+l = i + j / k * j * (i + k);
